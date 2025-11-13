@@ -1,6 +1,10 @@
 <?php
 session_start();
-include_once '../conexao.php'; 
+include_once 'conexao.php'; 
+
+if (!$conn) {
+    die("Conexão não encontrada no login.php");
+}
 
 $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
