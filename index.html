@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorldTech</title>
+    <title>EcoShop Solidário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">WorldTech</div>
+        <div class="logo">
+            <img src="logo 1.png" alt="Logo">
+        </div>
 
         <nav>
             <ul>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Como ajudar</a></li>
+                <li><a href="#informacoes">Informações</a></li>
+                <li><a href="como-ajudar.html">Como ajudar</a></li>
                 <li><a href="#">Produtos</a></li>
-                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
             </ul>
         </nav>
 
@@ -31,42 +33,152 @@
         <div class="hero-content">
             <h1>A mudança começa com você!</h1>
             <p>Compre produtos sustentáveis e ajude a financiar projetos ambientais que protegem o planeta.</p>
-
-            <a href="login.html" class="cta-btn">Quero fazer parte</a>
+            <a href="serv/login.php" class="cta-btn">Quero fazer parte</a>
         </div>
     </section>
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>WorldTech</h3>
-            <p>Construindo um futuro sustentável através da tecnologia e da consciência ambiental.</p>
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="sobre-nos fade-up">
+        <h2>Sobre Nós</h2>
+
+        <p>
+            WorldTech, acreditamos que pequenas atitudes geram grandes transformações. 
+            Nosso propósito é unir consumo consciente e impacto positivo, oferecendo produtos 
+            sustentáveis que fazem bem para você e para o planeta.
+        </p>
+
+        <p>
+            Somos um e-commerce voltado para quem quer viver de forma mais responsável — 
+            aqui você encontra desde copos reutilizáveis e canudos de inox, até camisetas 
+            de algodão orgânico, tudo pensado para reduzir o desperdício e incentivar um 
+            estilo de vida mais verde.
+        </p>
+
+        <p>
+            Mas vamos além da venda de produtos: parte do nosso lucro é destinada a financiar 
+            projetos ambientais, ajudando na preservação de florestas, limpeza de rios e ações 
+            de reciclagem.
+        </p>
+
+        <p>
+            Em cada compra, você acompanha o impacto ambiental positivo que está gerando — 
+            como a quantidade de plástico que deixou de ir para o lixo ou a redução da sua 
+            pegada ecológica.
+        </p>
+
+        <p>
+            Porque mudar o mundo começa com escolhas conscientes.
+        </p>
+    </section>
+
+    <!-- INFORMAÇÕES COM CARDS -->
+    <section id="informacoes" class="informacoes fade-up">
+        <h2>Informações</h2>
+
+        <p class="infos-intro">
+            Aqui você encontra detalhes sobre como a WorldTech transforma cada compra em impacto ambiental positivo.
+            Nosso compromisso é garantir transparência, responsabilidade e resultados reais para o planeta.
+        </p>
+
+        <!-- GRID DOS CARDS -->
+        <div class="cards-informacoes">
+
+            <div class="card-info">
+                <div class="icon">🌱</div>
+                <h3>Impacto Ambiental</h3>
+                <p>
+                    Cada compra ajuda a financiar projetos reais, como reflorestamento, limpeza de rios
+                    e ações de reciclagem.
+                </p>
+            </div>
+
+            <div class="card-info">
+                <div class="icon">♻️</div>
+                <h3>Fornecedores Sustentáveis</h3>
+                <p>
+                    Trabalhamos com fabricantes certificados que utilizam materiais ecológicos
+                    e processos de baixo impacto ambiental.
+                </p>
+            </div>
+
+            <div class="card-info">
+                <div class="icon">📊</div>
+                <h3>Métricas de Impacto</h3>
+                <p>
+                    Após suas compras, mostramos quanto plástico foi evitado, CO₂ reduzido
+                    e quais projetos você apoiou.
+                </p>
+            </div>
+
+            <div class="card-info">
+                <div class="icon">🌳</div>
+                <h3>Projetos Apoiados</h3>
+                <p>
+                    Financiamos ações ambientais verificadas, garantindo resultados reais
+                    e rastreáveis para o planeta.
+                </p>
+            </div>
+
         </div>
 
-        <div class="footer-column">
-            <h4>Links úteis</h4>
-            <ul>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <div class="infos-final">
+            <p>
+                Nosso objetivo é garantir que cada pequena atitude sua resulte em um grande impacto — 
+                sempre com transparência e compromisso com o futuro.
+            </p>
         </div>
 
-        <div class="footer-column">
-            <h4>Redes sociais</h4>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom">
-        <p>© 2024 WorldTech - Todos os direitos reservados.</p>
-    </div>
-</footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>WorldTech</h3>
+                <p>Construindo um futuro sustentável através da tecnologia e da consciência ambiental.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Links úteis</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#informacoes">Projetos</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Redes sociais</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 WorldTech - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PARA ANIMAÇÃO -->
+    <script>
+        const observers = document.querySelectorAll('.fade-up');
+
+        const appear = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        observers.forEach(el => appear.observe(el));
+    </script>
 
 </body>
 </html>

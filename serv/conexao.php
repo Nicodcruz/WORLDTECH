@@ -1,8 +1,8 @@
 <?php
 $host = "sql10.freesqldatabase.com";
-$usuario = "sql10807603";
-$senha = "iZr5jZQn49";
-$banco = "sql10807603";
+$usuario = "sql10809265";
+$senha = "wciKk8eIiz";
+$banco = "sql10809265";
 $porta = "3306";
 
 $conn = new mysqli($host, $usuario, $senha, $banco, $porta);

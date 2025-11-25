@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login - WorldTech</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="serv/styles_login/login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="serv/login.php" method="POST">
-            <input type="text" name="usuario" placeholder="Usuário" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
+
+<div class="main-container">
+
+    <div class="left-panel">
+        <div class="logo">
+            <span>WorldTech</span>
+        </div>
+        <h1 class="title">Construindo um futuro sustentável através da tecnologia.</h1>
+        <button class="ui-design-button">voltar</button>
     </div>
+
+    <div class="right-panel">
+
+        <form action="../serv/login.php" method="POST" class="login-form">
+
+            <h2>Login</h2>
+            <p class="subtitle">Preencha os campos abaixo com os seus dados de acesso.</p>
+
+            <input type="text" name="usuario" placeholder="Digite o seu usuário ou e-mail" required>
+
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit" class="button-primary">Acessar</button>
+            
+        </form>
+
+        <button type="button" class="button-secondary">Criar minha conta</button>
+    </div>
+
+</div>
+
 </body>
 </html>

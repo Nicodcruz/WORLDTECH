@@ -1,0 +1,181 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #507a34; /* Fundo escuro */
+}
+
+/* Container Principal (Layout de 2 Colunas) */
+.main-container {
+    width: 100%;
+    max-width: 1200px; 
+    height: 100vh; /* Para ocupar a altura total da viewport */
+    display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* --- PAINEL ESQUERDO (Branding/Marketing) --- */
+.left-panel {
+    flex: 1.5; /* Ocupa cerca de 60% */
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  
+    background: #196909;
+    color: white;
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.left-panel .title {
+    font-size: 3.5em; 
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.ui-design-button {
+    background-color: #346349;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+/* --- PAINEL DIREITO (Formulário de Login) --- */
+.right-panel {
+    flex: 1; /* Ocupa cerca de 40% */
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Degradê sutil de fundo para a direita */
+    background: #346349;
+    color: white;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-panel h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-self: flex-start; /* Alinha o título à esquerda */
+}
+
+.right-panel .subtitle {
+    font-size: 0.9em;
+    margin-bottom: 40px;
+    color: #ccc;
+    align-self: flex-start; /* Alinha o subtítulo à esquerda */
+}
+
+/* Estilo dos Campos de Input (como na imagem) */
+.right-panel input {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    font-size: 1em;
+    border-radius: 8px; 
+    outline: none;
+}
+
+.right-panel input::placeholder {
+    color: rgba(255, 255, 255, 0.5); 
+}
+
+/* --- BOTÕES --- */
+
+/* Botão Primário (Acessar) */
+.button-primary {
+    background-color: #ffffff; /* Verde/Menta */
+    color: #333; 
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+    background-color: #75ffbc; 
+}
+
+/* Botão Secundário (Criar conta) */
+.button-secondary {
+    width: 100%; /* Ocupa a largura total da coluna direita */
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffffff; 
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff; 
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .left-panel {
+        flex: 1;
+        padding: 40px 30px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .left-panel .title {
+        font-size: 2.5em;
+    }
+
+    .right-panel {
+        flex: 1;
+        padding: 40px 30px;
+    }
+}

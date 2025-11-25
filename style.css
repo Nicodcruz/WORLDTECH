@@ -18,7 +18,7 @@
 }
 
 .logo {
-    color: #ffffff;
+    color: #00FF00;
     font-size: 32px;
     font-weight: bold;
 }
@@ -168,4 +168,160 @@
     margin-top: 30px;
     border-top: 1px solid rgba(255,255,255,0.15);
     padding-top: 15px;
+}
+.logo img {
+    height: 65px; 
+    width: auto;
+}
+/* SEÇÃO SOBRE NÓS */
+.sobre-nos {
+    width: 100%;
+    padding: 100px 80px;
+    background: #f0f3f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+    color: #1b4d1b;
+}
+
+/* Linha decorativa */
+.sobre-nos h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #82d436;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+.sobre-nos p {
+    max-width: 900px;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* Animação suave ao aparecer */
+.sobre-nos p, .sobre-nos h2 {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 0.8s forwards ease-out;
+}
+
+.sobre-nos p:nth-child(2) { animation-delay: .2s; }
+.sobre-nos p:nth-child(3) { animation-delay: .35s; }
+.sobre-nos p:nth-child(4) { animation-delay: .5s; }
+.sobre-nos p:nth-child(5) { animation-delay: .65s; }
+.sobre-nos p:nth-child(6) { animation-delay: .8s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Estilo compartilhado das seções tipo bloco */
+.sobre-nos {
+    width: 100%;
+    padding: 80px 60px;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.sobre-nos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-bottom: 18px;
+}
+
+/* ANIMAÇÃO SCROLL */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Seção Informações */
+.cards-informacoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card-info {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card-info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.card-info .icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.card-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #006b3c;
+}
+
+.infos-intro,
+.infos-final {
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+.infos-final {
+    margin-top: 80px;     /* distância grande para descer mais */
+    text-align: center;
+}
+
+.infos-final p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+section {
+    scroll-margin-top: 120px; /* ajuste conforme a altura da sua navbar */
+}
+.informacoes {
+    width: 100%;
+    padding: 100px 80px;
+    background: #e9f5e9; /* verde */
+    color: #333;
+    text-align: center;
 }
