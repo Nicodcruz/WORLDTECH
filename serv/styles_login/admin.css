@@ -1,0 +1,79 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Fundo ===== */
+body {
+    background: linear-gradient(135deg, #214d10, #9dcf60);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Container ===== */
+.container {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Título ===== */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* ===== Texto de boas-vindas ===== */
+.welcome {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* ===== Botões ===== */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* Botão principal */
+.primary {
+    background: #96a7a2;
+    color: rgb(255, 255, 255);
+}
+.primary:hover {
+    background: #62665b;
+}
+
+/* Botão vermelho (sair) */
+.danger {
+    background: #65c923;
+    color: white;
+}
+.danger:hover {
+    background: #215316;
+}

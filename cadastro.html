@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+
+    <link rel="stylesheet" href="serv/styles_login/login.css">
+
+    <style>
+        /* Estilo adicional para diferenciar a página */
+        .right-panel h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="left-panel">
+        <div class="logo"><span>WorldTech</span></div>
+        <h1 class="title">Crie sua conta e junte-se a nós.</h1>
+
+        <a href="login.html">
+            <button class="ui-design-button">Voltar</button>
+        </a>
+    </div>
+
+    <div class="right-panel">
+
+        <form action="serv/cadastro.php" method="POST" class="login-form">
+
+            <h2>Criar conta</h2>
+            <p class="subtitle">Preencha os campos abaixo para criar seu acesso.</p>
+
+            <input type="text" name="usuario" placeholder="Escolha um usuário" required>
+
+            <input type="password" name="senha" placeholder="Digite uma senha" required>
+
+            <input type="password" name="confirmar" placeholder="Confirme sua senha" required>
+
+            <button type="submit" class="button-primary">Criar conta</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
